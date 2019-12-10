@@ -1,0 +1,66 @@
+{
+  "name": "jekyll-webpack-skeleton",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack --config webpack.config.js --watch",
+    "jekyll-dev": "bundle exec jekyll serve",
+    "jekyll-build": "bundle exec jekyll build",
+    "clean": "rimraf ./_site ./assets",
+    "lint": "npm-run-all lint:*",
+    "lint:js": "eslint _src/script --ext .js --cache",
+    "lint:css": "sass-lint -c .sass-lint.yml -v",
+    "prettify": "prettier --write \"_src/**/*.{js,scss,json}\"",
+    "precommit": "lint-staged"
+  },
+  "author": "Rick Makkee",
+  "license": "MIT",
+  "browserslist": [
+    "last 2 version",
+    "last 3 iOS major versions"
+  ],
+  "lint-staged": {
+    "src/**/*.{js,ts,scss,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.js": [
+      "eslint --ext .js --cache"
+    ],
+    "*.scss": "sass-lint -c .sass-lint.yml -v"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "autoprefixer": "^9.7.2",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-import-resolver-webpack": "^0.12.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "file-loader": "^5.0.2",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.19.1",
+    "sass": "^1.23.7",
+    "sass-lint": "^1.13.1",
+    "sass-loader": "^8.0.0",
+    "seng-scss": "^1.2.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

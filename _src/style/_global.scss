@@ -1,0 +1,20 @@
+html {
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  // sass-lint:disable-block no-vendor-prefixes
+  -webkit-appearance: none;
+  border-radius: 0;
+}

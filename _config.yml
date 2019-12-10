@@ -1,0 +1,9 @@
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - README.md
+  - webpack.config.js

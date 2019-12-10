@@ -1,0 +1,7 @@
+.foo {
+  img {
+    @include size(128px);
+    display: block;
+    margin: 0 auto;
+  }
+}
