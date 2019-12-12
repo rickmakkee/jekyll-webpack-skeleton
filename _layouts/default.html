@@ -7,7 +7,9 @@
   <link rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/screen.css" />
 </head>
 <body>
-  {{ content }}
+  <div id="app">
+    {{ content }}
+  </div>
 
   <script src="{{ base.url | prepend: site.url }}/assets/bundle.js"></script>
 </body>
