@@ -38,9 +38,6 @@ rules:
   hex-length:
     - 2
     - style: short
-  hex-notation:
-    - 2
-    - style: lowercase
   id-name-format:
     - 2
     - convention: hyphenatedlowercase
@@ -58,8 +55,8 @@ rules:
   nesting-depth:
     - 2
     - max-depth: 4
-  no-color-keywords: 2
-  no-color-literals: 2
+  no-color-keywords: 1
+  no-color-literals: 1
   no-css-comments: 0
   no-debug: 2
   no-duplicate-properties: 2
@@ -157,7 +154,7 @@ rules:
   trailing-semicolon: 2
   url-quotes: 0
   variable-for-property:
-    - 2
+    - 1
     - properties:
         - font-family
         - color
