@@ -179,3 +179,12 @@ yarn precommit
 > **Note:** Keep in mind that some lint errors might pop up in files that are not updated by
 > changing other things (like imports that are not correct after renaming a file), so it's good
 > practice to run `yarn lint` once in while to verify the complete codebase is valid.
+
+
+### Images/assets
+
+Assets like images and fonts that are used in the scss files should be placed in the folder `_src/assets/`.
+This folder is processed by webpack.
+
+Other assets like image, videos and other documents that are used in the data files should be placed in the `static` folder.
+This folder is not processed by webpack and is copied over to the build unprocessed.
