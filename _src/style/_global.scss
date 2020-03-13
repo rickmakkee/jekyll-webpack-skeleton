@@ -1,10 +1,21 @@
 html {
   -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+  height: 100%;
 }
 
 body {
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+a,
+button,
+input,
+video {
+  .mode-mouse & {
+    outline: none;
+  }
 }
 
 a,
