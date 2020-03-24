@@ -6,7 +6,7 @@ A Jekyll skeleton project with Webpack to compile javascript and scss
 
 #### Install Node.js
 
-[Node.js](https://nodejs.org/en/) allows you to run JavaScript code on a server, Muban uses Node.js
+[Node.js](https://nodejs.org/en/) allows you to run JavaScript code on a server, This project uses Node.js
 so you'll need to make sure you have a recent version installed on your computer.
 
 ##### Using Homebrew on MacOS, Linux or Windows 10.
@@ -57,7 +57,7 @@ After you made sure you have the right Ruby version install the
 gem install bundler
 ```
 
-After installing Bundler run the following command to install all project specific Gems:
+After installing Bundler run the following command in the project root to install all project specific Gems:
 
 ```bash
 bundle install
@@ -117,8 +117,7 @@ You can put the contents of this folder on a web server.
 
 We use [Prettier](https://github.com/prettier/prettier) to format all our code. This is enabled for
 `js` and `scss` files. The corresponding linters are configured to adhere to the rules
-from prettier (so they won't conflict), and linting errors should only occur for non-stylistic
-errors.
+from prettier (so they won't conflict).
 
 Prettier is configured to run on the `pre-commit` using `husky` and `lint-staged` hook, and can also
 be manually invoked by:
