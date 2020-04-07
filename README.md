@@ -148,12 +148,12 @@ command:
 yarn lint:js
 ```
 
-#### sass-lint
+#### stylelint
 
-We use [sass-lint](https://github.com/sasstools/sass-lint) to lint our scss code.
-It's configured for use with Prettier.
+We use [stylelint](https://stylelint.io/) to lint our scss code.
+It's configured for use with Prettier and uses stylelint-config-recommended-scss with minor modifications.
 
-To trigger sass-lint you should open up the terminal in the root of your project and run the following
+To trigger stylelint you should open up the terminal in the root of your project and run the following
 command:
 
 ```
